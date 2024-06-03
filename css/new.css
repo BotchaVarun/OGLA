@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+*
+{
+    margin:0;
+    border:0;
+    scroll-behavior: smooth;
+}
+body{
+    display: block;
+}
+.container{
+    padding:20px;
+    margin: auto;
+    background-color: rgb(73, 72, 71);
+}
+
+.navbar{
+    box-shadow: 0px 5px 5px 0px #434242;
+    position: fixed;
+    width:100%;
+    
+    
+    color: #fff9f9;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    height: 24px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: -10px;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+
+}
+
+.navbar a{
+    color: #fef6f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+.side-bar1
+{
+    width:30%;
+    height:0;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+    background-color: #117964;
+    margin-top:22px; 
+    margin-right: 100px;
+    transition: height 0.5s ease;
+}
+.side-bar2
+{
+    width:30%;
+    height:0;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+    background-color: #117964;
+    margin-top:22px; 
+    margin-right: 100px;
+    transition: height 0.5s ease;
+}
+.side-bar3
+{
+    width:15%;
+    height:0;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+    background-color: #117964;
+    margin-top:22px; 
+    margin-right: 100px;
+    transition: height 0.5s ease;
+}
+.side-bar1 li,
+.side-bar2 li,
+.side-bar3 li{
+    padding: 10px 10px;
+    margin:10px;
+    color: #fef6f6;
+    
+    border:1px solid #000;
+}
+.algo:hover .side-bar1{
+    height:200px;
+    width:30%;
+}
+.flow:hover .side-bar2{
+    height:200px;
+    width:30%;
+}
+.concept:hover .side-bar3{
+    height:200px;
+    width:15%;
+}
